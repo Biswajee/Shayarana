@@ -1,15 +1,7 @@
-<!doctype html>
-<html>
-<head>
-  <title>
-    Shayarana - The Shayar's Blog
-  </title>
-  <!--<%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css' %>
-  <%= javascript_include_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js' %> -->
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
+<nav class="navbar navbar-default">
+  <li>Home</li>
+  <li>About</li>
+</nav>
 <h1>Add Posts</h1>
 <%= form_for :post, url: posts_path do |f| %>
 <p>

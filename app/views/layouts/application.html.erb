@@ -5,12 +5,35 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <style>
+       body {
+           max-width: 100%;
+           overflow-x: hidden;
+       }
 
+       html,
+       body {
+           height: 100%;
+           margin: 0;
+       }
+   </style>
   <body>
+    <nav class="transparent navbar navbar-fixed-top" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="../" class="brand-logo"><img src="/static/images/brand_icon.png" style="height: 80px; width:220px;" /></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="../">Home</a></li>
+                <li><a href="#">Volunteer Now</a></li>
+                <li><a href="../app_download/#contact-page">Contact us</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
     <%= yield %>
   </body>
 </html>

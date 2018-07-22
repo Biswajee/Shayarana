@@ -5,7 +5,7 @@ body {
 
 .navbar-fixed-top {
   position: fixed;
-  i vtop: 0;
+  /*i vtop: 0;*/
   width: 100%;
   z-index: 500;
 }

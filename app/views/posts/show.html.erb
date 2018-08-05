@@ -1,2 +1,15 @@
-<h2><%= @post.title %></h2>
-<p><%= @post.body %></p>
+<div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <%=image_tag("1524.png", width: '100px', height: '100px') %>
+          <span class="card-title">Post Creator</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <h2><%= @post.title %></h2>
+          <p><%= @post.body %></p>
+        </div>
+      </div>
+    </div>
+  </div>
